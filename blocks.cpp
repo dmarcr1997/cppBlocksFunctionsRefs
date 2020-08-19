@@ -1,13 +1,16 @@
 #include<iostream>
 using namespace std;
-
+int i = 5;
 int main() {
-	int i;
-	i = 5;
+	int j = 7;
+	cout << i << "\n";
 	{
-		int j;
-		i = 10;
-		j = 10;
+		int i = 10, j = 11;
+		cout << i << "\n";
+		cout << ::i << "\n";
+		cout << j << "\n";
 	}
+	cout << j << "\n";
 	//j = 5; incorrect
+	return 0;
 }
